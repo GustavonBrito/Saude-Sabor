@@ -7,7 +7,7 @@ export default function Home() {
         <img
           src="src\assets\Black_Illustration_Catering_Logo-removebg-preview.png"
           alt="Sabor e Saúde.png"
-          width={"220px"}
+          width={"300px"}
         />
         <ul>
           <li>

@@ -1,7 +1,9 @@
 import styled from "styled-components";
+import theme from "../../themes/allThemes";
 
 export const NavBar = styled.div`
   display: flex;
+  background-color: ${theme.COLORS.BACKGROUND};
 
   & ul {
     display: flex;
@@ -18,6 +20,7 @@ export const NavBar = styled.div`
     text-decoration-line: none;
     cursor: pointer;
     transition: 1s;
+    opacity: 0.5;
   }
 
   & ul a:hover {

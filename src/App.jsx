@@ -1,4 +1,4 @@
-import DefaultLayout from "./Components/layouts/DefaultLayout";
+import DefaultLayout from "./layouts/DefaultLayout";
 
 function App() {
   return (

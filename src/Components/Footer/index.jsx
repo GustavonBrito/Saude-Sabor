@@ -1,7 +1,11 @@
+import { StyledFooter } from "./Footer.style";
+
 let Footer = () => {
   return (
     <>
-      <div>teste</div>
+      <StyledFooter>
+        <div>teste</div>
+      </StyledFooter>
     </>
   );
 };
