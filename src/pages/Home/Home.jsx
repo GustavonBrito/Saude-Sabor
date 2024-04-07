@@ -1,31 +1,17 @@
-import { HomeStyle, HomePhotoStyle } from "./Home.styles";
-import Description from "../../Components/Description";
+import Description from "../../Components/Description/index";
 
 export default function Home() {
   return (
     <>
-      <HomeStyle>
-        <HomePhotoStyle>
-          <Description />
-        </HomePhotoStyle>
-        <div>
+      <div className="flex">
+        <Description />
+        <div className="h-full mt-auto w-full -ml-28">
           <img
             src="src/assets/Yakissoba-removebg-preview.png"
             alt="Yakissoba.png"
-            width={800}
           />
         </div>
-      </HomeStyle>
-      <HomePhotoStyle>
-        <Description />
-        <div>
-          <img
-            src="src/assets/Macarrao_com_Almondegas-removebg-preview.png"
-            alt="Yakissoba.png"
-            width={800}
-          />
-        </div>
-      </HomePhotoStyle>
+      </div>
     </>
   );
 }
