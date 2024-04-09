@@ -4,11 +4,12 @@ export default function Home() {
   return (
     <>
       <div className="flex justify-center w-full h-48 bg-cyan-100 font-roboto gap-80">
-        <div className="-mt-20 -ml-44">
+        <div className="-mt-20 -ml-44 max-sm:my-auto max-md:my-auto ">
           <img
             src="src\assets\Black_Illustration_Catering_Logo-removebg-preview.png"
             alt="Sabor e Saúde.png"
             width={"350px"}
+            className="max-sm:w-6/12 max-md:w-6/12 max-sm:ml-44 max-md:ml-44 w-6/12 ml-44"
           />
         </div>
 
