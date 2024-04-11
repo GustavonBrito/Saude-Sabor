@@ -12,7 +12,13 @@ export default {
         roboto: ["Roboto", "sans-serif"],
         ceteraBlack: ["Et Cetera Black W00 Regular", "sans-serif"],
       },
+      backgroundColor: {
+        blueSky: "#d9ebf5",
+      },
+      maxHeight:{
+        firstSectionHeight : 'calc(100vh - 12rem)'
+      }
     },
   },
-  plugins: [require("flowbite/plugin")],
+  plugins: [import("flowbite/plugin")],
 };

@@ -1,9 +1,10 @@
 import { List } from "phosphor-react";
 
-export default function Home() {
+
+export default function Navbar() {
   return (
     <>
-      <div className="flex justify-center w-full h-48 bg-cyan-100 font-roboto gap-80">
+      <header className="flex justify-center w-full h-48 bg-blueSky font-roboto gap-80">
         <div className="-mt-20 -ml-44 max-sm:my-auto max-md:my-auto ">
           <img
             src="src\assets\Black_Illustration_Catering_Logo-removebg-preview.png"
@@ -30,7 +31,7 @@ export default function Home() {
             </li>
           </ul>
         </div>
-      </div>
+      </header>
     </>
   );
 }

@@ -1,7 +1,7 @@
 let Footer = () => {
   return (
     <>
-      <div>teste</div>
+      <footer>teste</footer>
     </>
   );
 };

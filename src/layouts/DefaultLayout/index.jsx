@@ -6,7 +6,7 @@ let DefaultLayout = () => {
   return (
     <>
       <NavBar />
-      <main className="h-lvh ">
+      <main>
         <Outlet />
       </main>
       <Footer />
