@@ -4,8 +4,8 @@ import Carousel from "../../Components/Carousel/index";
 export default function Home() {
   const carouselImages = [
     "src/assets/Black_Illustration_Catering_Logo-removebg-preview.png",
-    "src/assets/Black_Illustration_Catering_Logo-removebg-preview.png",
-    "src/assets/Black_Illustration_Catering_Logo-removebg-preview.png",
+    "src/assets/Yaki.png",
+    "src/assets/Macarrao_com_Almondegas-removebg-preview.png",
     "src/assets/Black_Illustration_Catering_Logo-removebg-preview.png",
     "src/assets/Black_Illustration_Catering_Logo-removebg-preview.png",
     "src/assets/Black_Illustration_Catering_Logo-removebg-preview.png",
@@ -29,8 +29,8 @@ export default function Home() {
         </div>
         <div>
           <Carousel>
-            {carouselImages.map((carouselImage) => (
-              <img key={1} src={carouselImage} alt="Yakissoba.png" />
+            {carouselImages.map((carouselImage, index) => (
+              <img width={'400px'} height={'200px'}key={index} src={carouselImage} alt="Yakissoba.png" />
             ))}
           </Carousel>
         </div>

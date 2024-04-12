@@ -14,6 +14,7 @@ export default {
       },
       backgroundColor: {
         blueSky: "#d9ebf5",
+        blueOcean: "#5d5eb1"
       },
       maxHeight:{
         firstSectionHeight : 'calc(100vh - 12rem)'
