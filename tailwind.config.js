@@ -14,11 +14,13 @@ export default {
       },
       backgroundColor: {
         blueSky: "#d9ebf5",
-        blueOcean: "#5d5eb1"
+        blueOcean: "#5d5eb1",
+        footerColorFirstStep: "#faf9ff",
+        footerColorSecondStep: "#3b3dae",
       },
-      maxHeight:{
-        firstSectionHeight : 'calc(100vh - 12rem)'
-      }
+      maxHeight: {
+        firstSectionHeight: "calc(100vh - 12rem)",
+      },
     },
   },
   plugins: [import("flowbite/plugin")],

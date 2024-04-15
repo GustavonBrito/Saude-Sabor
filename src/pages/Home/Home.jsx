@@ -18,9 +18,10 @@ export default function Home() {
 
           <div>
             <img
+              className=""
               src="src/assets/Yaki.png"
               alt="Yakissoba.png"
-              width={"650px"}
+              width={"350px"}
             />
           </div>
         </div>
