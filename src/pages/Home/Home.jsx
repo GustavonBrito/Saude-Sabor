@@ -3,13 +3,10 @@ import Carousel from "../../Components/Carousel/index";
 
 export default function Home() {
   const carouselImages = [
-    "src/assets/Black_Illustration_Catering_Logo-removebg-preview.png",
-    "src/assets/Yaki.png",
-    "src/assets/Macarrao_com_Almondegas-removebg-preview.png",
-    "src/assets/Black_Illustration_Catering_Logo-removebg-preview.png",
-    "src/assets/Black_Illustration_Catering_Logo-removebg-preview.png",
-    "src/assets/Black_Illustration_Catering_Logo-removebg-preview.png",
-    "src/assets/Black_Illustration_Catering_Logo-removebg-preview.png",
+    "src/assets/Yakissoba_Frango.png",
+    "src/assets/Yakissoba_Frango.png",
+    "src/assets/Yakissoba_Frango.png",
+    "src/assets/Yakissoba_Frango.png",
   ];
   return (
     <>
@@ -19,7 +16,7 @@ export default function Home() {
             <Description />
           </div>
 
-          <div className="rotate-12">
+          <div>
             <img
               src="src/assets/Yaki.png"
               alt="Yakissoba.png"
@@ -30,7 +27,14 @@ export default function Home() {
         <div>
           <Carousel>
             {carouselImages.map((carouselImage, index) => (
-              <img width={'400px'} height={'200px'}key={index} src={carouselImage} alt="Yakissoba.png" />
+              <img
+                className="flex mx-auto justify-center"
+                width={"100%"}
+                height={"100%"}
+                key={index}
+                src={carouselImage}
+                alt="Yakissoba.png"
+              />
             ))}
           </Carousel>
         </div>
