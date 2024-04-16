@@ -19,11 +19,8 @@ const Carousel = ({ children: carouselImage }) => {
 
   return (
     <>
-      <div
-        className="relative bg-red-900  overflow-hidden"
-        style={{ height: "max-content" }}
-      >
-        <div className="flex-col">
+      <div className="relative bg-red-900  overflow-hidden h-lvh">
+        <div className="flex-col h-1/3">
           <h1 className="flex font-roboto text-white text-5xl font-bold pt-10 pb-2 justify-center">
             Nosso Menu
           </h1>
@@ -34,7 +31,7 @@ const Carousel = ({ children: carouselImage }) => {
             omnis accusamus tempora non esse!
           </p>
         </div>
-        <div className="w-lvw h-lvh flex-row">
+        <div className="w-lvw h-2/3 flex-row">
           <div className="flex absolute inset-0 w-lvw">
             <div
               className="flex my-auto mx-auto transition-transform ease-out duration-1000 w-2/4 h-lvh"
