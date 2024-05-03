@@ -1,4 +1,4 @@
-let Footer = () => {
+export const Footer = () => {
   return (
     <>
       <footer className="h-lvh">
@@ -8,4 +8,4 @@ let Footer = () => {
     </>
   );
 };
-export default Footer;
+

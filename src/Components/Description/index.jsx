@@ -1,4 +1,4 @@
-const Description = () => {
+export const Description = () => {
   return (
     <div className="max-sm:mx-auto max-sm:flex max-sm:flex-col max-sm:justify-center">
       <h1 className="font-ceteraBlack text-9xl text-blue-800 max-sm:text-7xl max-sm:ml-12 max-md:ml-12, mt-10 responsive-small-screen">
@@ -18,5 +18,3 @@ const Description = () => {
     </div>
   );
 };
-
-export default Description;

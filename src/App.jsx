@@ -1,12 +1,10 @@
-import DefaultLayout from "./layouts/DefaultLayout";
-import './index.css'
+import { DefaultLayout } from "./layouts/DefaultLayout";
+import "./index.css";
 
-function App() {
+export const App = () => {
   return (
     <>
       <DefaultLayout />
     </>
   );
-}
-
-export default App;
+};

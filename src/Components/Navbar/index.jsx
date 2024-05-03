@@ -1,7 +1,6 @@
 import { List } from "phosphor-react";
 
-
-export default function Navbar() {
+export const NavBar = () => {
   return (
     <>
       <header className="flex justify-center w-full h-48 bg-blueSky font-roboto gap-80">
@@ -34,4 +33,4 @@ export default function Navbar() {
       </header>
     </>
   );
-}
+};

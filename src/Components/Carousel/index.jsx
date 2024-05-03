@@ -1,19 +1,20 @@
 /* eslint-disable react/prop-types */
 import { ArrowLeft, ArrowRight } from "phosphor-react";
 import { useState } from "react";
+import { Product } from "../Product";
 
-const Carousel = ({ children: carouselImage }) => {
+export const Carousel = ({ carouselImages }) => {
   let [current, setCurrent] = useState(0);
 
   const handleNextImage = () => {
     setCurrent((current) =>
-      current == carouselImage.length - 1 ? 0 : current + 1
+      current == carouselImages.length - 1 ? 0 : current + 1
     );
   };
 
   const handlePreviousImage = () => {
     setCurrent((current) =>
-      current == 0 ? carouselImage.length : (current -= 1)
+      current == 0 ? carouselImages.length - 1 : (current -= 1)
     );
   };
 
@@ -32,12 +33,12 @@ const Carousel = ({ children: carouselImage }) => {
           </p>
         </div>
         <div className="w-lvw h-2/3 flex-row">
-          <div className="flex absolute inset-0 w-lvw">
+          <div className="flex absolute inset-0">
             <div
-              className="flex my-auto mx-auto transition-transform ease-out duration-1000 w-2/4 h-lvh"
-              style={{ transform: `translateX(-${current * 100}%)` }}
+              className="flex items-center justify-center transition-transform ease-out duration-1000 h-lvh "
+              style={{ transform: `translateX(-${current * 25}%)` }}
             >
-              {carouselImage}
+              <Product carouselImages={carouselImages} />
             </div>
 
             <div className="flex absolute inset-0 justify-between mx-6">
@@ -55,7 +56,7 @@ const Carousel = ({ children: carouselImage }) => {
               </button>
             </div>
             <div className="absolute flex inset-0 justify-center gap-5 max-h-fit mt-auto">
-              {carouselImage.map((_, i) => {
+              {carouselImages.map((_, i) => {
                 return (
                   <div
                     key={i}
@@ -72,5 +73,3 @@ const Carousel = ({ children: carouselImage }) => {
     </>
   );
 };
-
-export default Carousel;

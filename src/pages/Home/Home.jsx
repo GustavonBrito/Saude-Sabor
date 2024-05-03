@@ -1,12 +1,13 @@
-import Description from "../../Components/Description/index";
-import Carousel from "../../Components/Carousel/index";
+import { Description } from "../../Components/Description/index";
+import { Carousel } from "../../Components/Carousel/index";
 
-export default function Home() {
+export const Home = () => {
   const carouselImages = [
-    "src/assets/Yakissoba_Frango.png",
-    "src/assets/Yakissoba_Frango.png",
-    "src/assets/Yakissoba_Frango.png",
-    "src/assets/Yakissoba_Frango.png",
+    "src/assets/Yaki.png",
+    "src/assets/Yaki.png",
+    "src/assets/Yaki.png",
+    "src/assets/Yaki.png",
+    "src/assets/Yaki.png",
   ];
   return (
     <>
@@ -16,7 +17,7 @@ export default function Home() {
             <Description />
           </div>
 
-          <div>
+          <div className="flex items-center">
             <img
               className=""
               src="src/assets/Yaki.png"
@@ -26,20 +27,9 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <Carousel>
-            {carouselImages.map((carouselImage, index) => (
-              <img
-                className="flex mx-auto justify-center"
-                width={"100%"}
-                height={"100%"}
-                key={index}
-                src={carouselImage}
-                alt="Yakissoba.png"
-              />
-            ))}
-          </Carousel>
+          <Carousel carouselImages={carouselImages} />
         </div>
       </div>
     </>
   );
-}
+};
