@@ -7,7 +7,6 @@ export const Home = () => {
     "src/assets/Yaki.png",
     "src/assets/Yaki.png",
     "src/assets/Yaki.png",
-    "src/assets/Yaki.png",
   ];
   return (
     <>

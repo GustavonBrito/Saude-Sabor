@@ -15,6 +15,7 @@ export default {
       backgroundColor: {
         blueSky: "#d9ebf5",
         blueOcean: "#5d5eb1",
+        creamAdvise: "#f7eedd",
         footerColorFirstStep: "#faf9ff",
         footerColorSecondStep: "#3b3dae",
       },

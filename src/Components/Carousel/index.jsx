@@ -21,11 +21,11 @@ export const Carousel = ({ carouselImages }) => {
   return (
     <>
       <div className="relative bg-red-900  overflow-hidden h-lvh">
-        <div className="flex-col h-1/3">
+        <div className="flex-col h-1/3 w-lvw" id="carouselMenu">
           <h1 className="flex font-roboto text-white text-5xl font-bold pt-10 pb-2 justify-center">
             Nosso Menu
           </h1>
-          <p className="text-justify md:px-96 max-sm:px-20 justify-center text-sm text-white">
+          <p className="text-justify md:px-40 max-sm:px-20 justify-center text-sm text-white">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
             repellendus maiores vel eaque magni inventore quibusdam dolore
             eveniet exercitationem incidunt, veniam architecto totam ut quidem
@@ -36,7 +36,9 @@ export const Carousel = ({ carouselImages }) => {
           <div className="flex absolute inset-0">
             <div
               className="flex items-center justify-center transition-transform ease-out duration-1000 h-lvh "
-              style={{ transform: `translateX(-${current * 25}%)` }}
+              style={{
+                transform: `translateX(-${current * (100 / carouselImages.length)}%)`,
+              }}
             >
               <Product carouselImages={carouselImages} />
             </div>

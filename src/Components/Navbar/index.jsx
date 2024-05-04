@@ -20,7 +20,7 @@ export const NavBar = () => {
           />
           <ul className="flex gap-10 align-middle max-sm:hidden max-md:hidden">
             <li>
-              <a href="">MENU</a>
+              <a href="#carouselMenu">MENU</a>
             </li>
             <li>
               <a href="">FAÇA UM PEDIDO</a>
