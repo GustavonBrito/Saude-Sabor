@@ -22,6 +22,9 @@ export default {
       maxHeight: {
         firstSectionHeight: "calc(100vh - 12rem)",
       },
+      backgroundImage: {
+        bannerImage: "url('../../src/assets/Banner-Fundo-Yakissoba.jpg')",
+      },
     },
   },
   plugins: [import("flowbite/plugin")],

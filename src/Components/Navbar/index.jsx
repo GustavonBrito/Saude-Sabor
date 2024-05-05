@@ -3,8 +3,8 @@ import { List } from "phosphor-react";
 export const NavBar = () => {
   return (
     <>
-      <header className="flex justify-center w-full h-48 bg-blueSky font-roboto gap-80">
-        <div className="-mt-20 -ml-44 max-sm:my-auto max-md:my-auto ">
+      <header className="flex justify-center items-center w-full h-48  font-roboto gap-80">
+        <div className="-ml-44 max-sm:my-auto max-md:my-auto">
           <img
             src="src\assets\Black_Illustration_Catering_Logo-removebg-preview.png"
             alt="Sabor e Saúde.png"
@@ -23,7 +23,7 @@ export const NavBar = () => {
               <a href="#carouselMenu">MENU</a>
             </li>
             <li>
-              <a href="">FAÇA UM PEDIDO</a>
+              <a href="">SOBRE NÓS</a>
             </li>
             <li>
               <a href="">CONTATO</a>

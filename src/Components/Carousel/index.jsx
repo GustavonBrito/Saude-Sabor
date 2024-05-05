@@ -37,7 +37,9 @@ export const Carousel = ({ carouselImages }) => {
             <div
               className="flex items-center justify-center transition-transform ease-out duration-1000 h-lvh "
               style={{
-                transform: `translateX(-${current * (100 / carouselImages.length)}%)`,
+                transform: `translateX(-${
+                  current * (100 / carouselImages.length)
+                }%)`,
               }}
             >
               <Product carouselImages={carouselImages} />

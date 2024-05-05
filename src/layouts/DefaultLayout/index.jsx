@@ -6,18 +6,20 @@ import { WhatsappLogo } from "phosphor-react";
 export const DefaultLayout = () => {
   return (
     <>
-      <NavBar />
-      <main>
-        <div className="w-lvw">
+      <div className="bg-bannerImage text-white bg-cover bg-no-repeat">
+        <NavBar />
+        <main>
           <WhatsappLogo
             className="fixed z-10"
             size={"48px"}
             color="green"
             weight="fill"
           />
-        </div>
-        <Outlet />
-      </main>
+
+          <Outlet />
+        </main>
+      </div>
+
       <Footer />
     </>
   );
