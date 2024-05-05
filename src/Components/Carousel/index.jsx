@@ -20,12 +20,12 @@ export const Carousel = ({ carouselImages }) => {
 
   return (
     <>
-      <div className="relative bg-red-900  overflow-hidden h-lvh">
+      <div className="relative bg-white  overflow-hidden h-lvh">
         <div className="flex-col h-1/3 w-lvw" id="carouselMenu">
-          <h1 className="flex font-roboto text-white text-5xl font-bold pt-10 pb-2 justify-center">
+          <h1 className="flex font-ceteraBlack text-black text-7xl font-bold pt-10 pb-2 justify-center">
             Nosso Menu
           </h1>
-          <p className="text-justify md:px-40 max-sm:px-20 justify-center text-sm text-white">
+          <p className="text-justify md:px-40 max-sm:px-20 justify-center text-sm text-black mt-10">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
             repellendus maiores vel eaque magni inventore quibusdam dolore
             eveniet exercitationem incidunt, veniam architecto totam ut quidem
@@ -62,7 +62,7 @@ export const Carousel = ({ carouselImages }) => {
                 return (
                   <div
                     key={i}
-                    className={`p-2 bg-white mt-auto mb-4 rounded-full h-1 transition-all ${
+                    className={`p-2 bg-black mt-auto mb-4 rounded-full h-1 transition-all ${
                       current === i ? "p-3" : "bg-opacity-50"
                     }`}
                   ></div>

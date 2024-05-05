@@ -13,7 +13,7 @@ export default {
         ceteraBlack: ["Et Cetera Black W00 Regular", "sans-serif"],
       },
       backgroundColor: {
-        blueSky: "#d9ebf5",
+        blueSky: "#f5f5f1",
         blueOcean: "#5d5eb1",
         creamAdvise: "#f7eedd",
         footerColorFirstStep: "#faf9ff",
