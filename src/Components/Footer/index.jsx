@@ -18,7 +18,7 @@ export const Footer = () => {
                   <p>Quinta-Feira: 20:00 as 23:00</p>
                   <p>Sexta-Feira: 20:00 as 23:00</p>
                   <p>Sabado: 20:00 as 23:00</p>
-                  <p>Domino: Fechado</p>
+                  <p>Domingo: Fechado</p>
                 </div>
               </div>
             </div>
